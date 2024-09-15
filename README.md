@@ -107,8 +107,9 @@ FROM 'C:\Tabelas para analisar Biologia\Nova tabela\tijucarana.csv'
 DELIMITER ','
 CSV HEADER;
 3. Executar Análises
-Calcular a Média:
 
+
+Calcular a Média:
 
 SELECT 
     AVG(ncclique) AS media_ncclique,
@@ -118,8 +119,9 @@ SELECT
     AVG(inc) AS media_inc
 FROM 
     tijucarana;
-Calcular o Desvio Padrão:
 
+
+Calcular o Desvio Padrão:
 
 SELECT 
     STDDEV(ncclique) AS desvio_padrao_ncclique,
@@ -129,8 +131,9 @@ SELECT
     STDDEV(inc) AS desvio_padrao_inc
 FROM 
     tijucarana;
-Calcular o Valor Máximo:
 
+
+Calcular o Valor Máximo:
 
 SELECT 
     MAX(ncclique) AS valor_maximo_ncclique,
@@ -140,8 +143,9 @@ SELECT
     MAX(inc) AS valor_maximo_inc
 FROM 
     tijucarana;
-Calcular o Valor Mínimo:
 
+
+Calcular o Valor Mínimo:
 
 SELECT
     MIN(ncclique) AS valor_minimo_ncclique,
@@ -151,6 +155,20 @@ SELECT
     MIN(inc) AS valor_minimo_inc
 FROM
     tijucarana;
+
+
+Legenda das Colunas
+
+Aqui estão as explicações das colunas do conjunto de dados:
+
+cadeia: Número de cadeias de cliques produzidos pelos golfinhos de rio;
+data: Data da detecção de cada cadeia de clique;
+hora: Horário da detecção de cada cadeia de clique;
+nclique: Número de cliques de golfinhos de rio emitidos em cada cadeia;
+freq: Frequência média dos cliques;
+spl: Nível de pressão sonora (sound pressure level, no inglês);
+dur: Duração de cada cadeia de clique;
+ici: Intervalo médio entre os cliques de cada cadeia.
     
 Contribuições
 Se você deseja contribuir para este projeto, sinta-se à vontade para fazer um fork e criar um pull request com suas sugestões ou melhorias.
